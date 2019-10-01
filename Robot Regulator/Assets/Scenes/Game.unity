@@ -2020,6 +2020,7 @@ GameObject:
   - component: {fileID: 963194230}
   - component: {fileID: 963194229}
   - component: {fileID: 963194228}
+  - component: {fileID: 963194232}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2139,6 +2140,18 @@ RectTransform:
   m_AnchoredPosition: {x: 19.73, y: 21.18}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &963194232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b956fa548c54743be229af517978c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &975091498
 GameObject:
   m_ObjectHideFlags: 0
@@ -3465,7 +3478,6 @@ GameObject:
   - component: {fileID: 1432389061}
   - component: {fileID: 1432389060}
   - component: {fileID: 1432389059}
-  - component: {fileID: 1432389062}
   m_Layer: 5
   m_Name: PunishButton
   m_TagString: Untagged
@@ -3587,18 +3599,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432389057}
   m_CullTransparentMesh: 0
---- !u!114 &1432389062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1432389057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 277ec172c0e2335418b3ed8d3b005bbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1446832562
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonsUI : MonoBehaviour
+public class Camera_Script : MonoBehaviour
 {
-    
-    
-    
-    
-    
-    
+
+    public Transform robotPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +16,6 @@ public class ButtonsUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.LookAt(robotPosition);
     }
 }
