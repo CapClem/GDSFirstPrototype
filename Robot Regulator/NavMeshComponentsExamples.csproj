@@ -78,10 +78,10 @@
     <Compile Include="Assets\NavMeshComponents-master\Assets\Examples\Scripts\SpawnPrefabOnKeyDown.cs" />
     <None Include="Assets\NavMeshComponents-master\Assets\Examples\NavMeshComponentsExamples.asmdef" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/jclements9/Documents/GDSFirstPrototype/Robot Regulator/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/keyre/Desktop/GDSFirstPrototype/Robot Regulator/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/jclements9/Documents/GDSFirstPrototype/Robot Regulator/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/keyre/Desktop/GDSFirstPrototype/Robot Regulator/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
