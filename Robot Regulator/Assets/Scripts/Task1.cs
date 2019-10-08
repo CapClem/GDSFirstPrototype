@@ -2,17 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TasksScript : MonoBehaviour
+public class Task1 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter(Collider collider)
     {
-        
+        if (collider.gameObject.tag == "Player")
+        {
+            print("dope");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    /*void Randomizer()
     {
-        
-    }
+        var val = Random.value;
+
+        if (val < 0.5f)
+        {
+            print("<");
+        }
+        else if (val > 0.5f)
+        {
+            print(">");
+        }
+    }*/
 }
+

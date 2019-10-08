@@ -19,6 +19,7 @@ public class Robot : MonoBehaviour
     public Transform task1Position;
     public Transform task2Position;
     public Transform task3Position;
+    public Transform malfunctionPosition;
     
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,7 @@ public class Robot : MonoBehaviour
                 break;
 
             case state.Malfunction:
+                myNav.SetDestination(malfunctionPosition.transform.position);
                 break;
 
             case state.Destroyed:
