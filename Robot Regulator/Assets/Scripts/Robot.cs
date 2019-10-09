@@ -55,6 +55,7 @@ public class Robot : MonoBehaviour
                 break;
 
             case state.Destroyed:
+                myNav.SetDestination(this.transform.position);
                 break;
         }
        // if (input.get) ;
