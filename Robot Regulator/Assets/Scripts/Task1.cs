@@ -4,26 +4,19 @@ using UnityEngine;
 
 public class Task1 : MonoBehaviour
 {
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerEnter(Collider col)
     {
-        if (collider.gameObject.tag == "Player")
+        switch (col.tag)
         {
-            print("dope");
+            case "Task1":
+            Start();
+            break;
         }
     }
 
-    /*void Randomizer()
+    void Start()
     {
-        var val = Random.value;
-
-        if (val < 0.5f)
-        {
-            print("<");
-        }
-        else if (val > 0.5f)
-        {
-            print(">");
-        }
-    }*/
+        print("1");
+    }
 }
 

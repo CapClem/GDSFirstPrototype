@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Task3 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter(Collider col)
     {
-        
+        switch (col.tag)
+        {
+            case "Task3":
+                Start();
+                break;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        print("3");
     }
 }
