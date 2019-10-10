@@ -2,6 +2,8 @@
 
 public class Task2 : MonoBehaviour
 {
+    public GameObject Taskitem;
+    public GameObject Hold;
     void OnTriggerEnter(Collider col)
     {
         switch (col.tag)

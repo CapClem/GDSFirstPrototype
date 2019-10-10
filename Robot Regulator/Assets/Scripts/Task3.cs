@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Task3 : MonoBehaviour
 {
+    public GameObject Taskitem;
+    public GameObject Hold;
     void OnTriggerEnter(Collider col)
     {
         switch (col.tag)

@@ -12,7 +12,7 @@ public class Robot : MonoBehaviour
     NavMeshAgent myNav;
 
     //Name the diffrent states of our robot & set start
-    public enum state { Idle, Task1, Task2, Task3, Malfunction, Destroyed };
+    public enum state { Idle, Task1, Task2, Task3, Malfunction, Destroyed, CompleteTask };
     public state myState = state.Idle;
 
     //set starting position for our robot tasks/activities
@@ -20,6 +20,7 @@ public class Robot : MonoBehaviour
     public Transform task2Position;
     public Transform task3Position;
     public Transform malfunctionPosition;
+    public Transform trash;
     
     // Start is called before the first frame update
     void Start()
@@ -56,6 +57,9 @@ public class Robot : MonoBehaviour
 
             case state.Destroyed:
                 myNav.SetDestination(this.transform.position);
+                break;
+            case state.CompleteTask:
+                myNav.SetDestination(trash.transform.position);
                 break;
         }
        // if (input.get) ;
