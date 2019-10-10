@@ -4,20 +4,32 @@ using UnityEngine;
 
 public class Task3 : MonoBehaviour
 {
-    public GameObject Taskitem;
-    public GameObject Hold;
+    public GameObject taskItemC;
+    public GameObject hold;
+    public GameObject itemHeld;
+
     void OnTriggerEnter(Collider col)
     {
         switch (col.tag)
         {
             case "Task3":
-                Start();
+                Pickup(col);
+                if (col.tag == "Task3")
+                {
+                    itemHeld = taskItemC;
+                }
                 break;
         }
     }
 
-    void Start()
+    void Pickup(Collider x)
     {
-        print("3");
+        if (x.tag == "Task3")
+        {
+            taskItemC.transform.position = hold.transform.position;
+            taskItemC.transform.parent = hold.transform;
+            Debug.Log("pickupitem");
+
+        }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Task1 : MonoBehaviour
 {
-    public GameObject taskItem;
+    public GameObject taskItemA;
     public GameObject hold;
     public GameObject itemHeld;
     
@@ -15,31 +15,24 @@ public class Task1 : MonoBehaviour
             case "Task1":
             Pickup(col);
             if(col.tag == "Task1")
-                {
-                    itemHeld = taskItem;
-                }
+            {
+              itemHeld = taskItemA;
+            }
             break;
         }
     }
 
     void Pickup(Collider x)
-
     {
         if (x.tag == "Task1")
         {
-            taskItem.transform.position = hold.transform.position;
-            taskItem.transform.parent = hold.transform;
+            taskItemA.transform.position = hold.transform.position;
+            taskItemA.transform.parent = hold.transform;
             Debug.Log("pickupitem");
-        }
-        else if (x.tag == "Trash" && itemHeld != null)
-        {
-            Destroy(taskItem);
-            Debug.Log("DestoyItem");
             
         }
-        else {
-            Debug.Log("fuck");
-        }
+       
     }
+  
 }
 
