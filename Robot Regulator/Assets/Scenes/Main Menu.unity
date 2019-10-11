@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.18836774, g: 0.7830189, b: 0.20705423, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -460,6 +460,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b956fa548c54743be229af517978c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  robot: {fileID: 0}
+  ClipBoard: {fileID: 0}
+  failureRate: 0
 --- !u!1 &348952597
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,7 +663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.18836774, g: 0.7830189, b: 0.20705423, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -697,6 +700,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b956fa548c54743be229af517978c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  robot: {fileID: 0}
+  ClipBoard: {fileID: 0}
+  failureRate: 0
 --- !u!1 &595373720
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,7 +812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.18836774, g: 0.7830189, b: 0.20705423, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -843,6 +849,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b956fa548c54743be229af517978c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  robot: {fileID: 0}
+  ClipBoard: {fileID: 0}
+  failureRate: 0
 --- !u!1 &656393857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,6 +1029,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b956fa548c54743be229af517978c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  robot: {fileID: 0}
+  ClipBoard: {fileID: 0}
+  failureRate: 0
 --- !u!1 &675860787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.18836774, g: 0.7830189, b: 0.20705423, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1247,6 +1259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b956fa548c54743be229af517978c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  robot: {fileID: 0}
+  ClipBoard: {fileID: 0}
+  failureRate: 0
 --- !u!1 &1403617629
 GameObject:
   m_ObjectHideFlags: 0

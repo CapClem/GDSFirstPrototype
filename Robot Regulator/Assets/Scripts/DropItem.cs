@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DropItem : MonoBehaviour
 {
@@ -18,6 +19,32 @@ public class DropItem : MonoBehaviour
     public Button task1Button;
     public Button task2Button;
     public Button task3Button;
+
+    //Score current tasks completed
+    public int tasksScored = 0;
+    //Malfunction score, Needs to be added to when zap button is used
+    public int failedTasks = 0;
+
+
+
+    void update()
+    {
+        //if the score is 3 for tasks done or failed change to the win/lose scene
+        if (failedTasks == 3)
+        {
+            //load the correct scene
+            SceneManager.LoadScene("YouLose", LoadSceneMode.Single);
+            tasksScored = 0;
+            failedTasks = 0;
+        }
+
+        if (tasksScored == 3)
+        {
+            SceneManager.LoadScene("Youwin", LoadSceneMode.Single);
+            tasksScored = 0;
+            failedTasks = 0;
+        }
+    }
 
     void OnTriggerEnter(Collider y)
     {
@@ -36,7 +63,8 @@ public class DropItem : MonoBehaviour
                 //turn the button off & change color
                 task1Button.GetComponent<Image>().color = Color.red;
                 task1Button.interactable = false;
-
+                //Add 1 to score
+                tasksScored = tasksScored + 1;
             }
 
             //checks if player is holding GameObject box2
@@ -49,6 +77,8 @@ public class DropItem : MonoBehaviour
                 //turn the button off & change color
                 task2Button.GetComponent<Image>().color = Color.red;
                 task2Button.interactable = false;
+                //Add 1 to score
+                tasksScored = tasksScored + 1;
             }
 
             //checks if player is holding GameObject box3
@@ -61,6 +91,8 @@ public class DropItem : MonoBehaviour
                 //turn the button off & change color
                 task3Button.GetComponent<Image>().color = Color.red;
                 task3Button.interactable = false;
+                //Add 1 to score
+                tasksScored = tasksScored + 1;
             }
 
             //after completing task reset robot
