@@ -21,11 +21,17 @@ public class RobotHealth : MonoBehaviour
        
     }
 
+    //reduce health and reset robot
     public void decreaseHealth()
     {
-        robotHealthBar.value -= 1;
-        robot.GetComponent<DropItem>().failedTasks = robot.GetComponent<DropItem>().failedTasks += 1; 
-    }
+        //only run if malfunctioning
+        if (robot.GetComponent<Robot>().myState == Robot.state.Malfunction)
+        {
+            robotHealthBar.value -= 1;
+            robot.GetComponent<DropItem>().failedTasks = robot.GetComponent<DropItem>().failedTasks += 1;
 
-    
+            //Send the robot back to the reset possition
+            robot.GetComponent<Robot>().myState = Robot.state.Reset;
+        }
+    }           
 }

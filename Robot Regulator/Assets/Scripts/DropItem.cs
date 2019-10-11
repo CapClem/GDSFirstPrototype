@@ -27,7 +27,7 @@ public class DropItem : MonoBehaviour
 
 
 
-    void update()
+    void Update()
     {
         //if the score is 3 for tasks done or failed change to the win/lose scene
         if (failedTasks == 3)

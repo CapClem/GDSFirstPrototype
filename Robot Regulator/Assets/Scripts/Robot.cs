@@ -23,6 +23,9 @@ public class Robot : MonoBehaviour
     public Transform trash;
     public Transform resetLocation;
 
+    //what status is displayed? string
+    public string currentStatus;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,32 +41,39 @@ public class Robot : MonoBehaviour
         switch (myState)
         {
             case state.Idle:
+                currentStatus = "Idle";
                 break;
 
             case state.Task1:
                 myNav.SetDestination(task1Position.transform.position);
+                currentStatus = "Completing Task 1";
                 break;
 
             case state.Task2:
                 myNav.SetDestination(task2Position.transform.position);
+                currentStatus = "Completing Task 2";
                 break;
 
             case state.Task3:
                 myNav.SetDestination(task3Position.transform.position);
+                currentStatus = "Completing Task 3";
                 break;
 
             case state.Malfunction:
                 myNav.SetDestination(malfunctionPosition.transform.position);
+                currentStatus = "????ERROR????";
                 break;
 
             case state.Destroyed:
                 myNav.SetDestination(this.transform.position);
+                currentStatus = "??!!ERROR!!??";
                 break;
             case state.CompleteTask:
                 myNav.SetDestination(trash.transform.position);
                 break;
             case state.Reset:
                 myNav.SetDestination(resetLocation.transform.position);
+                currentStatus = "Awaiting New Orders";
                 break;
         }
        // if (input.get) ;
