@@ -11,6 +11,6 @@ public class TasksLeft : MonoBehaviour
 
     void Update()
     {
-        tasksLeft.text = "Robot Status: " + (3 - robot.GetComponent<DropItem>().tasksScored);
+        tasksLeft.text = "Tasks Left: " + (3 - robot.GetComponent<DropItem>().tasksScored);
     }
 }
