@@ -30,6 +30,8 @@ public class Task3 : MonoBehaviour
             taskItemC.transform.parent = hold.transform;
             Debug.Log("pickupitem");
 
+            //switch state to complete task
+            this.gameObject.GetComponent<Robot>().myState = Robot.state.CompleteTask;
         }
     }
 }

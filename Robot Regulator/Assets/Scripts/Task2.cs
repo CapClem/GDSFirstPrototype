@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Task2 : MonoBehaviour
 {
@@ -28,6 +30,8 @@ public class Task2 : MonoBehaviour
             taskItemB.transform.parent = hold.transform;
             Debug.Log("pickupitem");
 
+            //switch state to complete task
+            this.gameObject.GetComponent<Robot>().myState = Robot.state.CompleteTask;
         }
     }
 }
